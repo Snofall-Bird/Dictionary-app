@@ -1,12 +1,15 @@
 import "./App.css";
-import dictionary from "./dictionary-app";
+import Dictionary from "./dictionary";
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">Dictionary</header>
-
-      <dictionary defaultKeyword="apple" />
+    <div className="container">
+      <div className="App">
+        <header className="App-header">Dictionary app</header>
+        <main>
+          <Dictionary defaultKeyword="happiness" />
+        </main>
+      </div>{" "}
     </div>
   );
 }
